@@ -1,24 +1,19 @@
-var modal1 = document.getElementById("signup-pop-up-modal");
-var modal2 = document.getElementById("signin-pop-up-modal");
+function showSignUp() {
+  var signUpModal = document.getElementById("signup-pop-up-modal");
+  signUpModal.style.display = "flex";
+}
 
-var btnAction1 = document.getElementsByClassName("signup-btn")[0];
-var btnAction2 = document.getElementsByClassName("signin-btn")[0];
+function hideSignUp() {
+  var signUpModal = document.getElementById("signup-pop-up-modal");
+  signUpModal.style.display = "none";
+}
 
-var span1 = document.getElementsByClassName("modal-close")[0];
-var span2 = document.getElementsByClassName("modal-close")[1];
+function showSignIn() {
+  var signInModal = document.getElementById("signin-pop-up-modal");
+  signInModal.style.display = "flex";
+}
 
-btnAction1.onclick = function () {
-  modal1.style.display = "flex";
-};
-
-span1.onclick = function () {
-  modal1.style.display = "none";
-};
-
-btnAction2.onclick = function () {
-  modal2.style.display = "flex";
-};
-
-span2.onclick = function () {
-  modal2.style.display = "none";
-};
+function hideSignIn() {
+  var signInModal = document.getElementById("signin-pop-up-modal");
+  signInModal.style.display = "none";
+}

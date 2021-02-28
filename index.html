@@ -38,8 +38,8 @@
         <p class="heading">Explore, Imagine, Create</p>
       </div>
       <div class="header-btn-container">
-        <button class="signup-btn">Sign Up</button>
-        <button class="signin-btn">Sign In</button>
+        <button class="signup-btn" onclick="showSignUp()">Sign Up</button>
+        <button class="signin-btn" onclick="showSignIn()">Sign In</button>
       </div>
     </div>
 
@@ -48,7 +48,7 @@
       <div class="modal-content">
         <div class="modal-head-container">
           <h2 class="modal-title">Get Started</h2>
-          <span class="modal-close">
+          <span class="modal-close" onclick="hideSignUp()">
             <i class="fa fa-times" aria-hidden="true"></i>
           </span>
         </div>
@@ -95,7 +95,7 @@
       <div class="modal-content">
         <div class="modal-head-container">
           <h2 class="modal-title">Welcome Back!</h2>
-          <span class="modal-close">
+          <span class="modal-close" onclick="hideSignIn()">
             <i class="fa fa-times" aria-hidden="true"></i>
           </span>
         </div>
