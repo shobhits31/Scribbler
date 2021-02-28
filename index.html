@@ -132,8 +132,17 @@
 
     <div class="post-btn-container">
       <button class="post-btn" onclick="loadAllPosts()">All Posts</button>
-      <button class="post-btn">Create Post</button>
+      <button class="post-btn" onclick="showCreatePost()">Create Post</button>
     </div>
+
+    <div id="createpost-pop-up-modal" class="modal">
+      <div class="post-modal-content">
+        <div class="post-modal-head-container">
+          <h2 class="post-modal-title">Pen Your Post</h2>
+          <span class="post-modal-close" onclick="hideCreatePost()">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </span>
+        </div>
   </body>
 
   <script src="../scripts/common.js"></script>
