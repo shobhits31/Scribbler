@@ -112,3 +112,15 @@ input {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
 }
+
+.bottom-banner {
+  text-align: center;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+
+.bottom-banner-text {
+  color: blue;
+  margin-left: 2px;
+  cursor: pointer;
+}
