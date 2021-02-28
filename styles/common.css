@@ -83,3 +83,32 @@
   font-weight: bold;
   color: grey;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.label-text {
+  margin: 10px 0;
+  font-family: "Roboto";
+}
+
+input {
+  font-family: "Roboto", sans-serif;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: none;
+}
+
+.modal-popup-btn {
+  background-color: green;
+  padding: 10px;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  margin-top: 25px;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
