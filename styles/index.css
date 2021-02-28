@@ -4,3 +4,21 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
+
+.post-btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 200px;
+}
+
+.post-btn {
+  background-color: #e6b800;
+  text-align: center;
+  margin: 7px;
+  padding: 10px 20px;
+  border: 2px solid grey;
+  font-size: 15px;
+}
