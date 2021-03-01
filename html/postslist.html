@@ -19,106 +19,100 @@
   <body>
     <!-- TODO: Include code for header here -->
     <div class="header">
-      <div class="titleContainer">
+      <div class="title-container">
         <p class="title">ScriBBler</p>
         <p class="heading">Explore, Imagine, Create</p>
       </div>
-      <div class="signInContainer">
-        <button class="buttonSignUp" onclick="showSignUp()">Sign Up</button>
-        <button class="buttonSignIn" onclick="showSignIn()">Sign In</button>
+      <div class="header-btn-container">
+        <button class="signup-btn" onclick="showSignUp()">Sign Up</button>
+        <button class="signin-btn" onclick="showSignIn()">Sign In</button>
       </div>
     </div>
 
-    <div id="signUppopUp" class="modal">
-      <div class="modalContent">
-        <div class="modalHead">
-          <h2 class="modalTitle">Get Started</h2>
-          <span class="modalClose" id="closeSignUp" onclick="hideSignUp()">
+    <!-- Sign Up Modal definition -->
+    <div id="signup-pop-up-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-head-container">
+          <h2 class="modal-title">Get Started</h2>
+          <span class="modal-close" onclick="hideSignUp()">
             <i class="fa fa-times" aria-hidden="true"></i>
           </span>
         </div>
         <hr />
         <div class="modal-body">
           <form>
-            <label for="name" class="labelText">Name</label>
+            <label for="name" class="label-text">Name</label>
             <input
               type="text"
               placeholder="Enter your name"
               id="name"
               required
             />
-            <label for="username" class="labelText">Username</label>
+            <label for="username" class="label-text">Username</label>
             <input
               type="text"
               placeholder="Enter your username"
               id="username"
               required
             />
-            <label for="password" class="labelText">Password</label>
+            <label for="password" class="label-text">Password</label>
             <input
-              type="password"
+              type="text"
               placeholder="Enter your password"
               id="password"
               required
             />
-            <label for="confirm-password" class="labelText"
+            <label for="confirmpassword" class="label-text"
               >Confirm Password</label
             >
             <input
-              type="password"
+              type="text"
               placeholder="Re-enter your password"
-              id="confirm-password"
+              id="confirmpassword"
               required
             />
-            <button
-              type="submit"
-              class="modalSignInbutton"
-              onclick="signup(name,username,password)"
-            >
-              Sign Up
-            </button>
+            <button type="submit" class="modal-popup-btn">Sign Up</button>
           </form>
         </div>
       </div>
     </div>
 
-    <div id="signInpopUp" class="modal">
-      <div class="modalContent">
-        <div class="modalHead">
-          <h2 class="modalTitle">Welcome Back!</h2>
-          <span onclick="hideSignIn()" id="closeSignIn" class="modalClose">
+    <div id="signin-pop-up-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-head-container">
+          <h2 class="modal-title">Welcome Back!</h2>
+          <span class="modal-close" onclick="hideSignIn()">
             <i class="fa fa-times" aria-hidden="true"></i>
           </span>
         </div>
         <hr />
-        <form>
-          <label for="username" class="labelText">Username</label>
-          <input
-            type="text"
-            id="username"
-            placeholder="Enter Username"
-            required
-          />
-          <label for="password" class="labelText">Password</label>
-          <input
-            type="password"
-            id="password"
-            placeholder="Enter Password"
-            required
-          />
-          <button
-            type="submit"
-            onclick="signin(username, password)"
-            class="modalSignInbutton"
-          >
-            Sign In
-          </button>
-        </form>
-        <p class="bottom-banner">
-          Not a member?<span onclick="hideSignIn();showSignUp();" class="signup"
-            >Sign Up</span
-          >
-        </p>
+        <div class="modal-body">
+          <form>
+            <label for="username" class="label-text">Username</label>
+            <input
+              type="text"
+              placeholder="Enter your username"
+              id="name"
+              required
+            />
+            <label for="password" class="label-text">Password</label>
+            <input
+              type="text"
+              placeholder="Enter your password"
+              id="password"
+              required
+            />
+            <button type="submit" class="modal-popup-btn">Sign In</button>
+            <p class="bottom-banner">
+              Not a member?
+              <span
+                class="bottom-banner-text"
+                onclick="hideSignIn();showSignUp()"
+                >Sign Up</span
+              >
+            </p>
+          </form>
+        </div>
       </div>
     </div>
     <!-- ATTENTION: The HTML code for the list of posts has been given to you. You can feel free to add/delete/modify this code. You need to write the proper CSS and JavaScript code corresponding to this page so that the result looks like the screenshots given to you in the Project Statement. -->
@@ -126,27 +120,28 @@
     <!-- list of all posts starts here -->
     <div class="post-container">
       <!-- post 1 starts here -->
-      <div class="post-content">
+      <div class="post">
         <div class="post-owner">
           <p>Srishti Gupta</p>
         </div>
 
-        <div>
-          <div>
+        <div class="post-content">
+          <div class="post-header">
             <p>‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</p>
-            <span>
+            <span class="trash-icon">
               <!-- TODO: Include Font Awesome icon for delete icon here -->
               <i class="fa fa-trash" aria-hidden="true"></i>
             </span>
           </div>
-          <p>
+          <p class="post-description">
             Since JavaScript does not have any type-checking, either of these
             keywords can be used to declare a variable of any type (datatype) in
             JavaScript. Though all the three keywords are used for the same
             purpose, they are different.
           </p>
-          <span>
+          <span class="ellipsis-icon">
             <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+            <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
           </span>
         </div>
       </div>
