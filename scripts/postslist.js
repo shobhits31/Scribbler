@@ -10,3 +10,8 @@ function deletePost() {
 function closeDeleteModal() {
   deleteModal.style.display = "none";
 }
+
+function deletePostConfirm() {
+  var deleteElement = document.getElementsByClassName("post")[0];
+  deleteElement.remove();
+}
