@@ -3,3 +3,9 @@
   font-weight: bold;
   font-family: "Roboto", sans-serif;
 }
+
+.post-owner-name {
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 100%;
+  font-weight: bold;
+}
