@@ -113,23 +113,35 @@
     </div>
 
     <div class="post">
-      <div id="post-header" class="post-title">
+      <div id="header" class="post-title">
         <h2 class="post-heading">
           Everything you should know about 'module' & 'require' in Nodejs
         </h2>
       </div>
       <div class="post-sub-header">
-        <button class="post-edit-save-btn">
-          Edit
-          <i class="fa fa-pencil-square-o"></i>
-        </button>
-        <button class="post-edit-save-btn">
-          Save
-          <i class="fa fa-floppy-o"></i>
-        </button>
-        <p class="post-owner-name">Srishti Gupta</p>
+        <p class="post-owner-name">
+          Srishti Gupta
+          <span>
+            <button
+              class="post-edit-save-btn"
+              id="edit-btn"
+              onclick="editPostContent()"
+            >
+              Edit&nbsp;
+              <i class="fa fa-pencil-square-o"></i>
+            </button>
+            <button
+              class="post-edit-save-btn"
+              id="save-btn"
+              onclick="savePostContent()"
+            >
+              Save&nbsp;
+              <i class="fa fa-floppy-o"></i>
+            </button>
+          </span>
+        </p>
       </div>
-      <div class="post-content">
+      <div class="post-content" id="content">
         <p>
           Node.js treats each JavaScript file as a separate module. For
           instance, if you have a file containing some code and this file is
@@ -158,4 +170,5 @@
     </div>
   </body>
   <script src="../scripts/common.js"></script>
+  <script src="../scripts/post.js"></script>
 </html>
