@@ -42,3 +42,14 @@ function addLike() {
     }
   }
 }
+
+function addComment(comment) {
+  if (comment.value.length > 0) {
+    document.getElementById("comment-list").innerHTML +=
+      '<p id="comment-posted">' + comment.value + "</p>";
+    var userComment = document.getElementById("userComment");
+    userComment.value = userComment.defaultValue;
+  } else {
+    alert("Enter some comment");
+  }
+}

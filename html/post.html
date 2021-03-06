@@ -181,16 +181,19 @@
       <div class="comments">
         <textarea
           class="comment-box"
+          id="userComment"
           type="text"
           placeholder="Leave a comment..."
         ></textarea>
         <br />
-        <button class="add-comment-btn">Comment</button>
+        <button class="add-comment-btn" onclick="addComment(userComment)">
+          Comment
+        </button>
       </div>
 
       <div class="comment-area">
         <h4>All Comments</h4>
-        <div class="comments-display"></div>
+        <div id="comment-list"></div>
       </div>
     </div>
   </body>
