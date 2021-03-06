@@ -46,3 +46,22 @@
   font-size: 12px;
   color: grey;
 }
+
+.add-comment-btn {
+  box-shadow: 0 5px 10px 0 rgb(248, 169, 187);
+  margin: 5px 0px 10px 0px;
+  padding: 10px 15px;
+  background-color: #ef3e67;
+  color: white;
+  border: none;
+  outline: none;
+}
+
+.comments {
+  margin-top: 20px;
+}
+
+.comment-box {
+  width: 60%;
+  height: 70px;
+}
