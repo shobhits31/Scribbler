@@ -1,4 +1,4 @@
-var postTitle = document.getElementById("header");
+var postTitle = document.getElementById("post-header");
 var postContent = document.getElementById("content");
 var editButton = document.getElementById("edit-btn");
 var saveButton = document.getElementById("save-btn");
@@ -21,4 +21,6 @@ function savePostContent() {
   postContent.style.border = "none";
   editButton.style.display = "block";
   saveButton.style.display = "none";
+  postTitle.innerHTML = updatedPostTitle;
+  postContent.innerHTML = updatedPostContent;
 }
