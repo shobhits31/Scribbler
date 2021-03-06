@@ -4,6 +4,7 @@ var editButton = document.getElementById("edit-btn");
 var saveButton = document.getElementById("save-btn");
 var updatedPostTitle = "UPDATED: " + postTitle.innerHTML;
 var updatedPostContent = "UPDATED: " + postContent.innerHTML;
+var numberOfClick = 0;
 
 function editPostContent() {
   postTitle.contentEditable = "true";
@@ -23,4 +24,21 @@ function savePostContent() {
   saveButton.style.display = "none";
   postTitle.innerHTML = updatedPostTitle;
   postContent.innerHTML = updatedPostContent;
+}
+
+function addLike() {
+  var likeButton = document.getElementById("add-likes");
+  likeButton.innerHTML =
+    '<i class="fa fa-thumbs-up ">' + "</i>" + "&nbsp;" + "Liked!";
+  likeButton.style.border = "none";
+  numberOfClick += 1;
+  if (numberOfClick != 0) {
+    if (numberOfClick == 1) {
+      document.getElementById("like-count").innerHTML =
+        numberOfClick + " person likes this!";
+    } else {
+      document.getElementById("like-count").innerHTML =
+        numberOfClick + " people likes this!";
+    }
+  }
 }

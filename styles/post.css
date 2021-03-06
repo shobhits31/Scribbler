@@ -31,7 +31,7 @@
   border: none;
 }
 
-.add-likes {
+.add-likes-btn {
   box-shadow: 0 5px 10px 0 rgb(248, 169, 187);
   margin: 5px 0px 10px 0px;
   padding: 10px 15px;
@@ -39,4 +39,10 @@
   color: white;
   border: none;
   outline: none;
+}
+
+.no-like-txt {
+  margin: 0px;
+  font-size: 12px;
+  color: grey;
 }
