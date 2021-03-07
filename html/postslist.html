@@ -123,15 +123,17 @@
     <!-- list of all posts starts here -->
     <div class="post-container">
       <!-- post 1 starts here -->
-      <div class="post">
+      <div class="post" id="post1">
         <div class="post-owner">
           <p>Srishti Gupta</p>
         </div>
 
         <div class="post-content">
           <div class="post-header">
-            <p>‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</p>
-            <span class="trash-icon" onclick="deletePost()">
+            <p class="post-header-content">
+              ‘let’ me be a ‘const’(ant), not a ‘var’(iable)!
+            </p>
+            <span class="trash-icon" onclick="deletePost('post1')">
               <!-- TODO: Include Font Awesome icon for delete icon here -->
               <i class="fa fa-trash" aria-hidden="true"></i>
             </span>
@@ -151,15 +153,17 @@
       <!-- post 1 ends here -->
 
       <!-- post 2 starts here -->
-      <div class="post">
+      <div class="post" id="post2">
         <div class="post-owner">
           <p>Colby Fayock</p>
         </div>
 
         <div class="post-content">
           <div class="post-header">
-            <p>What is linting and how can it save you time?</p>
-            <span class="trash-icon" onclick="deletePost()">
+            <p class="post-header-content">
+              What is linting and how can it save you time?
+            </p>
+            <span class="trash-icon" onclick="deletePost('post2')">
               <!-- TODO: Include Font Awesome icon for delete icon here -->
               <i class="fa fa-trash" aria-hidden="true"></i>
             </span>
@@ -178,15 +182,17 @@
       <!-- post 2 ends here -->
 
       <!-- post 3 starts here -->
-      <div class="post">
+      <div class="post" id="post3">
         <div class="post-owner">
           <p>Yazeed Bzadough</p>
         </div>
 
         <div class="post-content">
           <div class="post-header">
-            <p>How to Get More Views on Your Tech Blog</p>
-            <span class="trash-icon" onclick="deletePost()">
+            <p class="post-header-content">
+              How to Get More Views on Your Tech Blog
+            </p>
+            <span class="trash-icon" onclick="deletePost('post3')">
               <!-- TODO: Include Font Awesome icon for delete icon here -->
               <i class="fa fa-trash" aria-hidden="true"></i>
             </span>
@@ -206,15 +212,17 @@
       <!-- post 3 ends here -->
 
       <!-- post 4 starts here -->
-      <div class="post">
+      <div class="post" id="post4">
         <div class="post-owner">
           <p>Cedd Burge</p>
         </div>
 
         <div class="post-content">
           <div class="post-header">
-            <p>How to write easily describable code</p>
-            <span class="trash-icon" onclick="deletePost()">
+            <p class="post-header-content">
+              How to write easily describable code
+            </p>
+            <span class="trash-icon" onclick="deletePost('post4')">
               <!-- TODO: Include Font Awesome icon for delete icon here -->
               <i class="fa fa-trash" aria-hidden="true"></i>
             </span>
@@ -235,17 +243,17 @@
       <!-- post 4 ends here -->
 
       <!-- post 5 starts here -->
-      <div class="post" id="last-post">
+      <div class="post" id="post5">
         <div class="post-owner">
           <p>Srishti Gupta</p>
         </div>
 
         <div class="post-content">
           <div class="post-header">
-            <p>
+            <p class="post-header-content">
               Everything you should know about ‘module’ & ‘require’ in Node.js
             </p>
-            <span class="trash-icon" onclick="deletePost()">
+            <span class="trash-icon" onclick="deletePost('post5')">
               <!-- TODO: Include Font Awesome icon for delete icon here -->
               <i class="fa fa-trash" aria-hidden="true"></i>
             </span>
@@ -270,16 +278,14 @@
           <h3 class="modal-title">
             Are you sure you want to delete this post?
           </h3>
-          <form>
-            <div class="delete-btn-container">
-              <button class="btn-delete-yes" onclick="deletePostConfirm()">
-                Yes
-              </button>
-              <button class="btn-delete-no" onclick="closeDeleteModal()">
-                No
-              </button>
-            </div>
-          </form>
+          <div class="delete-btn-container">
+            <button class="btn-delete-yes" onclick="deletePostConfirm()">
+              Yes
+            </button>
+            <button class="btn-delete-no" onclick="closeDeleteModal()">
+              No
+            </button>
+          </div>
         </div>
       </div>
     </div>
