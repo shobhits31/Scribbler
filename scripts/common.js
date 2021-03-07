@@ -41,18 +41,18 @@ class Header extends HTMLElement {
               id="username"
               required
             />
-            <label for="password" class="label-text">Password</label>
+            <label for="user-password" class="label-text">Password</label>
             <input
-              type="text"
+              type="password"
               placeholder="Enter your password"
-              id="password"
+              id="user-password"
               required
             />
             <label for="confirmpassword" class="label-text"
               >Confirm Password</label
             >
             <input
-              type="text"
+              type="password"
               placeholder="Re-enter your password"
               id="confirmpassword"
               required
@@ -81,11 +81,11 @@ class Header extends HTMLElement {
               id="name"
               required
             />
-            <label for="password" class="label-text">Password</label>
+            <label for="user-password" class="label-text">Password</label>
             <input
-              type="text"
+              type="password"
               placeholder="Enter your password"
-              id="password"
+              id="user-password"
               required
             />
             <button type="submit" class="modal-popup-btn">Sign In</button>
