@@ -2,8 +2,8 @@ var postTitle = document.getElementById("post-header");
 var postContent = document.getElementById("content");
 var editButton = document.getElementById("edit-btn");
 var saveButton = document.getElementById("save-btn");
-var updatedPostTitle = "UPDATED: " + postTitle.innerHTML;
-var updatedPostContent = "UPDATED: " + postContent.innerHTML;
+var updatedPostTitle;
+var updatedPostContent;
 var numberOfClick = 0;
 
 function editPostContent() {
@@ -13,6 +13,8 @@ function editPostContent() {
   postContent.style.border = "1px solid pink";
   editButton.style.display = "none";
   saveButton.style.display = "block";
+  updatedPostTitle.value = postTitle.innerHTML;
+  updatedPostContent.value = postContent.innerHTML;
 }
 
 function savePostContent() {
@@ -22,8 +24,8 @@ function savePostContent() {
   postContent.style.border = "none";
   editButton.style.display = "block";
   saveButton.style.display = "none";
-  postTitle.innerHTML = updatedPostTitle;
-  postContent.innerHTML = updatedPostContent;
+  postTitle.innerHTML = "UPDATED: " + updatedPostTitle.value;
+  postContent.innerHTML = "UPDATED: " + updatedPostContent.value;
 }
 
 function addLike() {
@@ -45,11 +47,13 @@ function addLike() {
 
 function addComment(comment) {
   if (comment.value.length > 0) {
+    var commentBox = document.getElementById("comment-list");
+    commentBox.style.display = "flex";
     document.getElementById("comment-list").innerHTML +=
       '<p id="comment-posted">' + comment.value + "</p>";
     var userComment = document.getElementById("userComment");
     userComment.value = userComment.defaultValue;
   } else {
-    alert("Enter some comment");
+    alert("Please enter some comment");
   }
 }
