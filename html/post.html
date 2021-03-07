@@ -4,21 +4,28 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
     <link
       href="https://fonts.googleapis.com/css?family=Montez|Ubuntu+Mono|Roboto:wght@100&display=swap"
       rel="stylesheet"
     />
 
+    <!-- CSS for header component -->
     <link rel="stylesheet" type="text/css" href="../styles/common.css" />
+
+    <!-- CSS for Post page -->
     <link rel="stylesheet" type="text/css" href="../styles/post.css" />
   </head>
   <body>
+    <!-- Importing header component -->
     <header-component></header-component>
 
+    <!-- Code for Post Content and Title -->
     <div class="post">
       <div id="header" class="post-title">
         <h2 class="post-heading" id="post-header">
@@ -75,6 +82,7 @@
         </p>
       </div>
 
+      <!-- Code for Like button -->
       <div class="like">
         <button class="add-likes-btn" id="add-likes" onclick="addLike()">
           <i class="fa fa-thumbs-up"></i>
@@ -85,6 +93,7 @@
         </p>
       </div>
 
+      <!-- Code for User Comments -->
       <div class="comments">
         <textarea
           class="comment-box"
@@ -98,12 +107,15 @@
         </button>
       </div>
 
+      <!-- Code for displaying user comments -->
       <div class="comment-area">
         <h4>All Comments</h4>
         <div id="comment-list"></div>
       </div>
     </div>
   </body>
+
+  <!-- Importing JS scripts -->
   <script src="../scripts/common.js"></script>
   <script src="../scripts/post.js"></script>
 </html>
