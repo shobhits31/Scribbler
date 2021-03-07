@@ -1,3 +1,4 @@
+// Shadow DOM and making header as reusable component
 class Header extends HTMLElement {
   constructor() {
     super();
@@ -102,24 +103,27 @@ class Header extends HTMLElement {
     </div>`;
   }
 }
-
 customElements.define("header-component", Header);
 
+// Displays SignUp modal
 function showSignUp() {
   var signUpModal = document.getElementById("signup-pop-up-modal");
   signUpModal.style.display = "flex";
 }
 
+// Closes SignUp modal
 function hideSignUp() {
   var signUpModal = document.getElementById("signup-pop-up-modal");
   signUpModal.style.display = "none";
 }
 
+// Dislays SignIn modal
 function showSignIn() {
   var signInModal = document.getElementById("signin-pop-up-modal");
   signInModal.style.display = "flex";
 }
 
+// Closes SignIn modal
 function hideSignIn() {
   var signInModal = document.getElementById("signin-pop-up-modal");
   signInModal.style.display = "none";
