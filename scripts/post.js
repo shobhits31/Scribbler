@@ -6,6 +6,7 @@ var updatedPostTitle;
 var updatedPostContent;
 var numberOfClick = 0;
 
+// Invokes when "Edit" button is clicked
 function editPostContent() {
   postTitle.contentEditable = "true";
   postContent.contentEditable = "true";
@@ -17,6 +18,7 @@ function editPostContent() {
   updatedPostContent.value = postContent.innerHTML;
 }
 
+// Invokes when "Save" button is clicked
 function savePostContent() {
   postContent.contentEditable = "false";
   postTitle.contentEditable = "false";
@@ -28,6 +30,7 @@ function savePostContent() {
   postContent.innerHTML = "UPDATED: " + updatedPostContent.value;
 }
 
+// Method to add likes and update the count
 function addLike() {
   var likeButton = document.getElementById("add-likes");
   likeButton.innerHTML =
@@ -45,6 +48,7 @@ function addLike() {
   }
 }
 
+// Method to add user comments and displaying it on page
 function addComment(comment) {
   if (comment.value.length > 0) {
     var commentBox = document.getElementById("comment-list");
