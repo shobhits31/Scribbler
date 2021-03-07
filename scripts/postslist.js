@@ -3,15 +3,17 @@ function showPost() {
 }
 
 var deleteModal = document.getElementById("delete-modal");
-function deletePost() {
+var postToBeDeleted;
+function deletePost(postId) {
+  postToBeDeleted = document.getElementById(postId);
   deleteModal.style.display = "flex";
+}
+
+function deletePostConfirm() {
+  postToBeDeleted.remove();
+  deleteModal.style.display = "none";
 }
 
 function closeDeleteModal() {
   deleteModal.style.display = "none";
-}
-
-function deletePostConfirm() {
-  var deleteElement = document.getElementsByClassName("post")[0];
-  deleteElement.remove();
 }

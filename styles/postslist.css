@@ -5,34 +5,26 @@ body {
 .post-container {
   height: 100%;
   width: 100%;
-  padding: 50px 50px;
   display: flex;
-  flex-direction: row;
-  align-content: center;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 .post {
   width: 40%;
-  height: 40%;
   background-color: #fff;
-  margin: 10px 10px 10px 20px;
+  margin: 10px 10px 20px 90px;
   box-shadow: 0 4px 10px 0 rgba(17, 4, 63, 0.2),
     0 4px 20px 0 rgba(79, 19, 97, 0.19);
-  float: left;
-  margin-left: 90px;
   border-radius: 15px;
-  margin-bottom: 20px;
   font-family: "Roboto", sans-serif;
-  font-weight: bold;
   position: relative;
   order: 2;
   align-self: flex-start;
 }
 
 .post-content {
-  width: 85%;
+  /* width: 85%; */
   display: table-cell;
   text-align: left;
   background-color: #e8e8e8;
@@ -44,15 +36,12 @@ body {
 }
 
 .post-owner {
-  margin-top: auto;
-  margin-bottom: auto;
-  width: 15%;
-  max-width: 15%;
+  color: #747171;
+  font-weight: bold;
+  padding: 8px;
   display: table-cell;
   vertical-align: middle;
   text-align: center;
-  font-weight: bold;
-  color: #000;
 }
 
 .post-header {
@@ -61,24 +50,25 @@ body {
   justify-content: space-between;
   color: #808080;
   font-size: 18px;
+  margin-bottom: 0px;
+}
+
+.post-header-content {
+  margin-top: 0.6em;
+  margin-bottom: 0.5em;
 }
 
 .post-description {
-  height: 100px;
-  width: 100%;
   line-height: 1.2em;
   height: 3.6em;
   overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  justify-content: left;
+  margin-top: 0px;
 }
 
 .trash-icon {
-  margin: 2px;
   cursor: pointer;
   font-size: large;
-  margin-top: 15px;
+  margin-top: 0.6em;
 }
 
 .ellipsis-icon {
@@ -87,11 +77,6 @@ body {
   margin-bottom: 10px;
   font-weight: bold;
   color: #808080;
-}
-
-#last-post {
-  width: 40%;
-  height: 40%;
 }
 
 .delete-btn-container {
