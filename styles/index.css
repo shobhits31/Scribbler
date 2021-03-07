@@ -25,22 +25,83 @@ body {
   font-size: 15px;
 }
 
+.post-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.post-modal-content {
+  background-color: white;
+  padding: 20px;
+  width: 79%;
+  height: 75%;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.post-modal-head-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.post-modal-title {
+  margin-top: 2px;
+  margin-bottom: 5px;
+  font-family: "Roboto", sans-serif;
+  color: grey;
+}
+
+.post-modal-close {
+  margin: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  color: grey;
+}
+
+.post-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-label-text {
+  margin: 5px 0px 10px 0px;
+  font-family: "Roboto";
+}
+
+#title {
+  margin-bottom: 10px;
+}
+
 #contents {
   padding: 10px;
   font-family: "Roboto", sans-serif;
   background-color: #f0f0f0;
   border: none;
   outline-color: lightblue;
-  min-height: 330px;
+  min-height: 225px;
 }
 
 .createpost-btn {
   background-color: green;
   padding: 10px;
+  width: 15%;
   border: none;
   color: #fff;
-  font-size: 16px;
+  font-size: 15px;
   margin-top: 25px;
+  margin-left: 420px;
   cursor: pointer;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
